@@ -3,8 +3,8 @@
 "Text Representation"
 
 The classifiers and learning algorithms can not directly process the text documents in their original form, as most of them expect 
-numerical feature vectors with a fixed size rather than the raw text documents with variable length. Therefore, during the 
-preprocessing step, the texts are converted to a more manageable representation.
+numerical feature vectors with a fixed size rather than the raw text documents with variable length. 
+Therefore, during the preprocessing step, the texts are converted to a more manageable representation.
 
 One common approach for extracting features from text is to use the "bag of words" model: 
 a model where for each document, 
@@ -13,7 +13,7 @@ but the order in which they occur is ignored.
 Specifically, for each term in our dataset, we will calculate a measure called Term Frequency, Inverse Document Frequency, 
 abbreviated to tf-idf.
 We will use 
-"sklearn.feature_extraction.text.TfidfVectorizer" " to calculate a tf-idf vector for each of statement:
+"sklearn.feature_extraction.text.TfidfVectorizer" to calculate a tf-idf vector for each of statement:
 "sublinear_df" : is set to True to use a logarithmic form for frequency.
 "min_df" : is the minimum numbers of documents a word must be present in to be kept.
 "norm" : is set to l2, to ensure all our feature vectors have a euclidian norm of 1.
